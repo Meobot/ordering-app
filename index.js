@@ -32,9 +32,11 @@ function handleAddClick(shakeId) {
     
     addedItems.innerHTML += `
         <div class="added-shake">
-            <span class="shake-name">${targetShakeObj.name}</span>
+            <div class="added-shake-details">
+                <span class="added-shake-name">${targetShakeObj.name}</span>
+                <span class="added-shake-price">$${targetShakeObj.price}</span>
+            </div>
             <span class="remove-btn">remove</span>
-            <span class="shake-price">${targetShakeObj.price}</span>
         </div>
     `
     summaryContainer.style.display = "block"

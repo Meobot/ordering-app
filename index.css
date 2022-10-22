@@ -7,14 +7,26 @@ body {
     color: black;
     display: flex;
     justify-content: center;
-    background-image: url(./images/platter.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: none;
+    background-image: linear-gradient(
+    180deg,
+    hsl(270deg 100% 7%) 58%,
+    hsl(216deg 51% 20%) 88%,
+    hsl(202deg 46% 30%) 95%,
+    hsl(191deg 31% 42%) 99%,
+    hsl(177deg 23% 57%) 100%,
+    hsl(153deg 30% 76%) 101%,
+    hsl(104deg 100% 95%) 100%
+    );
 }
 
 .container {
     background-color: deepskyblue;
     width: 625px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    padding-bottom: 30px;
 }
 
 .header {
@@ -80,22 +92,21 @@ body {
 }
 
 .shake-name {
-    background-color: violet;
+    background-color: #C191BB;
     border: 2px solid black;
     border-radius: 10px;
     padding-left: 3px;
 }
 
 .ingredient-tag {
-    background-color: yellow;
+    background-color: #FFBA03;
     border: 2px solid black;
-    /* border-radius: 0px 0px 0px 10px; */
     padding: 3px 0px 3px 10px;
     margin: 0;
 }
 
 .ingredients {
-    background-color: crimson;
+    background-color: #E7375D;
     color: aliceblue;
     text-shadow: 1px 1px 3px black;
     padding: 3px 0px 3px 10px;
@@ -111,12 +122,45 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: royalblue;
+    background-color: #805F7C;
     border-radius: 0px 10px 10px 0px;
 }
 
 #summary-container {
     display: none;
+    max-width: 80%;
+    margin: auto;
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.summary-title-container {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #FFBA03;
+}
+
+.summary-title-container h2 {
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.added-shake {
+    display: flex;
+    justify-content: space-between;
+}
+
+.added-shake-details {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    background-color: #C191BB;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
 }
 
 #modal-container {
