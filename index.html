@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+    <!--font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>The Shakedown</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-inner">
+                    <h1 class="header-elements">The Shakedown</h1>
+                    <h2 class="header-elements">Grab your shake and gtfo!</h2>
+            </div>
+        </header>
+        <main>
+            <div id="items-container">
+                <!-- render items through JS here -->
+            </div>
+
+            <div id="summary-container"> 
+                <!-- hidden until item selected -->
+                <div class="summary-title-container">
+                    <h2>Your order</h2>
+                </div>
+                <div id="added-items-container">
+                    <!--JS generated list items for order-->
+                </div>
+                <div id="total-price-container">
+                    <span id="total-price">$0.00</span>
+                </div>
+                <div class="submit-btn-container">
+                    <button class="btn" id="submit-btn" data-submit="submit">Complete order</button>
+                </div>
+            </div> <!--summary-container-->
+
+            <div id="modal-container">
+                <div id="payment-modal">
+                    <!--switch this to generated in JS-->
+                    <div class="modal-title-container">
+                        <h2>Enter card details</h2>
+                    </div>
+                    <div class="modal-inputs-container">
+                        <input type="text" name="name" id="name" required>
+                        <input type="number" name="card-number" id="card-number" required>
+                        <input type="number" name="cvv" id="cvv-input" required>
+                    </div>
+                    <div class="modal-btn-container">
+                        <button class="btn" id="pay-btn" data-pay="pay-btn">Pay</button>
+                    </div>
+                </div>
+                <div id="rating-modal">
+                    <p>test</p>
+                    <!--JS generated-->
+                </div>
+            </div>
+        </main>
+        <script src="index.js" type="module"></script>
+    </div>
+</body>
+</html>
