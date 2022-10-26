@@ -3,11 +3,13 @@
 
 import { shakeList } from './data.js'
 
+const container = document.getElementById("container")
 const addedItems = document.getElementById("added-items-container")
 const summaryContainer = document.getElementById("summary-container")
 const modalContainer = document.getElementById("modal-container")
 const paymentModal = document.getElementById("payment-modal")
 const ratingModal = document.getElementById("rating-modal")
+let totalPrice = document.getElementById("total-price")
 let itemTotal = 0
 
 document.addEventListener("click", function(e) {
@@ -58,6 +60,7 @@ function handleSubmitClick() {
     // needs to bring up payment modal
     // hide after payment and bring up rating
     modalContainer.style.display = "block"
+    container.classList.add("bg-darken")
 }
 
 function handlePayClick() {
@@ -87,7 +90,7 @@ function getShakesHtml() {
                     <p class="ingredients">${shake.ingredients}</p>
                 </div>
             </div>
-            <span class="shake-span"><i class="fa-solid fa-plus" data-add="${shake.uuid}"></i></span>
+            <span class="shake-span" data-add="${shake.uuid}"><i class="fa-solid fa-plus" data-add="${shake.uuid}"></i></span>
         </div>
         `
     })
