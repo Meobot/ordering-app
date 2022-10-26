@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Shrikhand', cursive;
+    font-family: 'Fredoka One', cursive;
     font-size: smaller;
     background-color: black;
     color: black;
@@ -23,7 +25,7 @@ body {
 
 .container {
     background-color: deepskyblue;
-    width: 625px;
+    width: 650px;
     margin-bottom: 100px;
     border-radius: 10px;
     padding-bottom: 30px;
@@ -33,21 +35,23 @@ body {
     min-height: 20vh;
     background-image: url(./images/shake-banner.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: unset;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: white;
     margin: 0;
+    padding: 2em;
 }
 
 .header-inner {
-    width: 50%;
+    width: 70%;
     background-color: midnightblue;
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    align-items: center;
+    padding: 1em;
     border: 3px solid black;
     border-radius: 10px;
     text-shadow: 1px 1px 3px black;
@@ -65,13 +69,11 @@ body {
 
 .shake-container {
     display: flex;
-    width: 550px;
-    margin: 20px 0px;
+    margin: 2em;
 }
 
 .shake-img-container {
-    width: 100px;
-    margin-right: 30px;
+    margin-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,7 +97,15 @@ body {
     background-color: #C191BB;
     border: 2px solid black;
     border-radius: 10px;
-    padding-left: 3px;
+    padding: 0.5em 1em;
+}
+
+.price {
+    max-width: fit-content;
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 10px;
+    padding: 0.40em;
 }
 
 .ingredient-tag {
@@ -116,7 +126,7 @@ body {
 }
 
 .shake-span {
-    padding: 10px;
+    padding: 0.75em;
     max-width: 20px;
     min-height: 100%;
     display: flex;
@@ -163,10 +173,46 @@ body {
     margin-bottom: 5px;
 }
 
+#total-price-container {
+    max-width: fit-content;
+    padding: 3px;
+    margin: 20px 0px;
+    background-color: #FFBA03;
+    border: 2px solid #1c1c1c;
+    border-radius: 10px;
+}
+
+#total-price {
+    font-size: 2em;
+}
+
+.btn {
+    
+}
+
 #modal-container {
     display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+    height: 300px;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 2px white;
+    background-color: deepskyblue;
+    color: black;
 }
+
+
 
 #rating-modal {
     display: none;
+}
+
+.bg-darken {
+    opacity: 0.5;
 }
