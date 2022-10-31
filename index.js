@@ -27,6 +27,11 @@ document.addEventListener("click", function(e) {
     }
 })
 
+document.getElementById("close-modal-btn").addEventListener("click", function() {
+    modalContainer.style.display = "none"
+    container.classList.remove("bg-darken")
+})
+
 function handleAddClick(shakeId) {
     const targetShakeObj = shakeList.filter(function(shake) {
         return shake.uuid === shakeId

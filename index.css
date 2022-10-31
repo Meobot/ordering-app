@@ -102,8 +102,8 @@ body {
 
 .price {
     max-width: fit-content;
-    background-color: #1c1c1c;
-    color: white;
+    background-color: yellow;
+    color: #1c1c1c;
     border-radius: 10px;
     padding: 0.40em;
 }
@@ -187,7 +187,12 @@ body {
 }
 
 .btn {
-    
+    background-color: yellow;
+    color: #1c1c1c;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-family: inherit;
+    padding: 5px;
 }
 
 #modal-container {
